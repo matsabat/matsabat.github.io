@@ -1,1 +1,81 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Hunter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .title {
+            font-size: 4em;
+            margin-bottom: 200px;
+        }
+        .item {
+            font-size: 2em;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .social-icons {
+            display: inline-block;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+        .fa-brands {
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">This page is currently under construction</div>
+    <div class="container" id="container">
+        <div class = item style="animation-delay: 1s;">
+            <div>Check out our other media:</div>
+        </div>
+        <div class=item style="animation-delay: 2s;">
+            <iframe src="https://store.steampowered.com/widget/2864420/" frameborder="0" width="646" height="190"></iframe>
+        </div>
+        <div class=item style="animation-delay: 3s;">
+            <div class=social-icons>
+                <a href="https://x.com/forgeofwonders" target="_blank" class="fa-brands fa-x-twitter"></a>
+                <a href="https://www.tiktok.com/@forgeofwonders" target="_blank" class="fa-brands fa-tiktok"></a>
+                <a href="https://www.youtube.com/@forgeofwonders" target="_blank" class="fa-brands fa-youtube"></a>
+                <a href="https://www.instagram.com/forgeofwonders" target="_blank" class="fa-brands fa-instagram"></a>
+                <a href="https://discord.gg/XPvPjzERBF" target="_blank" class="fa-brands fa-discord"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
