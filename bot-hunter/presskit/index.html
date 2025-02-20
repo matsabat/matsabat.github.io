@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Hunter Presskit</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: clamp(1em, 6vw, 3em);
+            margin-top: 120px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: clamp(1em, 4vw, 2em);
+            margin-top: 80px;
+        }
+        h3 {
+            font-size: clamp(1em, 3vw, 1.5em);
+            margin-top: 20px;
+        }
+        p {
+            font-size: clamp(1em, 2vw, 1.3em);
+            line-height: 1.3em;
+        }
+
+        .two-columns {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 0 auto;
+            width: max(67%, 1120px)
+        }
+        .two-columns-left, .two-columns-right {
+            width: 45%;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        @media (max-width: 1120px) {
+            .two-columns {
+                flex-direction: column;
+                width: max(100%, 560px)
+            }
+            
+            .two-columns-left, .two-columns-right {
+                width: 100%;
+            }
+        }
+
+        .feature {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        .feature-left {
+            width: 30%;
+            text-align: right;
+        }
+        .feature-right {
+            width: 30%;
+            text-align: left;
+        }
+
+        .gallery-horizontal-panel {
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            gap: 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .gallery-horizontal-column {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 20px;
+        }
+        
+
+        .gallery-vertical-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .gallery-vertical-column {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .download {
+            margin-top: 80px;
+        }
+        .download a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 24px;
+        }
+        .download a:hover {
+            background: #0056b3;
+        }
+
+        .social-icons {
+            display: inline-block;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: clamp(1em, 4vw, 2em);
+        }
+        .fa-brands {
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            opacity: 0.8;
+        }
+        .fa-brands:hover {
+            opacity: 1;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 5px;
+        }
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .email {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .foot {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press Kit - Bot Hunter</h1>
+    <p>
+        Bot Hunter is a fast-paced roguelite shooter with modular weapons. Play as a vacuum cleaner bounty hunter.<br/>
+        Use color theory to clean the galaxy of bot scum and collect rewards to pay your bills.
+    </p>
+
+    <div class="centered" style="margin-bottom: 20px; margin-top: 40px;">
+        <div class="two-columns">
+            <div class="two-columns-left">
+                <div class="centered", style="margin: 0 auto;">
+                    <h2>Trailer</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GB9ZeyJiH2Q?si=1XVXhjOtd7IsuXhu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="two-columns-right">
+                <h2>Features</h2>
+                <div class="feature">
+                    <div class="feature-left">Modular Weapon System</div>
+                    <div class="feature-right">craft and swap different modules to adjust weapon</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-left">Color Theory Based Combat</div>
+                    <div class="feature-right">well-matched color of your weapon increases your damage, use it to your advantage!</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-left">Hacks</div>
+                    <div class="feature-right">make every mission unique by choosing most suitable boosts along the way</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-left">Roguelite Experience</div>
+                    <div class="feature-right">you don’t level up, you only gain experience and skill as you learn during the runs</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="centered">
+        <div class="two-columns">
+            <div class="two-columns-left">
+                <h2>Screenshots</h2>
+                <div class="gallery">
+                    <img src="images/ss_blue.jpg" alt="Screenshot 1" onclick="openPopup(this)">
+                    <img src="images/ss_eq.jpg" alt="Screenshot 2" onclick="openPopup(this)">
+                    <img src="images/ss_green.jpg" alt="Screenshot 3" onclick="openPopup(this)">
+                    <img src="images/ss_orange.jpg" alt="Screenshot 4" onclick="openPopup(this)">
+                    <img src="images/ss_red.jpg" alt="Screenshot 5" onclick="openPopup(this)">
+                    <img src="images/ss_yellow.jpg" alt="Screenshot 6" onclick="openPopup(this)">
+                </div>
+            </div>
+            <div class="two-columns-right">
+                <h2>Artworks</h2>
+                <div class="gallery">
+                    <img src="images/art_guardian.png" alt="Guardian" onclick="openPopup(this)">
+                    <img src="images/art_vacuum.png" alt="Vacuum" onclick="openPopup(this)">
+                    <img src="images/art_complete.png" alt="Art Complete" onclick="openPopup(this)">
+                    <img src="images/art_banner.png" alt="Art Banner" onclick="openPopup(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download" style="margin-bottom: 80px;">
+        <a href="bot-hunter-presskit.zip">Download Full Presskit</a>
+    </div>
+    
+    <div class="centered">
+        <iframe id="steam-widget" src="https://store.steampowered.com/widget/2864420/" frameborder="0" width="646" height="190"></iframe>
+        <script>
+            function ResizeSteamWidget() {
+                const iframe = document.getElementById('steam-widget');
+                iframe.width = Math.min(646, window.innerWidth * 0.8);
+            }
+            ResizeSteamWidget();
+        </script>
+    </div>
+
+    <div class="centered" style="margin-bottom: 40px;">
+        <h2>About us</h2>
+        <p>
+        We are an independent gamedev duo (coder + artist) from Wrocław, Poland. <br/>
+        We started our game-making journey in 2022 and not long after that the Bot Hunter was born.
+        </p>
+    </div>
+
+    <div class="centered" style="margin-bottom: 40px;">
+        <p>Follow us @forgeofwonders</p>
+        <div class=social-icons>
+            <a href="https://x.com/forgeofwonders" target="_blank" class="fa-brands fa-x-twitter"></a>
+            <a href="https://www.tiktok.com/@forgeofwonders" target="_blank" class="fa-brands fa-tiktok"></a>
+            <a href="https://www.youtube.com/@forgeofwonders" target="_blank" class="fa-brands fa-youtube"></a>
+            <a href="https://www.instagram.com/forgeofwonders" target="_blank" class="fa-brands fa-instagram"></a>
+            <a href="https://discord.gg/XPvPjzERBF" target="_blank" class="fa-brands fa-discord"></a>
+        </div>
+    </div>
+
+    <div class="centered">
+        <p>Contact: <a class="email" href="mailto:m.sabat@forgeofwonders.com">m.sabat@forgeofwonders.com</a></p>
+    </div>
+
+    <div class="foot"></div>
+
+    <div class="popup" id="popup" onclick="closePopup()">
+        <span class="close">&times;</span>
+        <img id="popup-img">
+
+        <script>
+            function openPopup(img) {
+                document.getElementById("popup-img").src = img.src;
+                document.getElementById("popup").style.display = "flex";
+            }
+
+            function closePopup() {
+                document.getElementById("popup").style.display = "none";
+            }
+        </script>
+    </div>
+</body>
+</html>
